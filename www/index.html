@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Projet I.A.</title>
+
+	<link href="style/css/calendar.css" rel="stylesheet" type="text/css">
+	<!-- <link href="style/css/bootstrap.min.css" rel="stylesheet" type="text/css"> -->
+
+	<!-- Website Font style -->
+	<link rel="stylesheet" href="style/css/fontawesome-free-5.3.1-web/css/all.min.css">
+
+</head>
+
+<body class="text-center">
+
+	<div class="wrapper">
+		<main>
+			<div class="toolbar">
+				<div class="toggle">
+					<div class="toggle__option toggle__option--selected">week</div>
+					<div class="toggle__option">month</div>
+				</div>
+
+				<div id="current_month" class="current-month"></div>
+
+				<div class="search-input">
+					<input type="text" value="What are you looking for?">
+					<i class="fa fa-search"></i>
+				</div>
+			</div>
+			<div id="cal" class="calendar">
+				<div class="calendar__header">
+					<div>mon</div>
+					<div>tue</div>
+					<div>wed</div>
+					<div>thu</div>
+					<div>fri</div>
+				</div>
+				<div class="calendar__week">
+					<div class="calendar__day day">1</div>
+					<div class="calendar__day day">2</div>
+					<div class="calendar__day day">3</div>
+					<div class="calendar__day day">4</div>
+					<div class="calendar__day day">5</div>
+				</div>
+				<div class="calendar__week">
+					<div class="calendar__day day">6</div>
+					<div class="calendar__day day">7</div>
+					<div class="calendar__day day">8</div>
+					<div class="calendar__day day">9</div>
+					<div class="calendar__day day">10</div>
+				</div>
+				<div class="calendar__week">
+					<div class="calendar__day day">11</div>
+					<div class="calendar__day day">12</div>
+					<div class="calendar__day day">13</div>
+					<div class="calendar__day day">14</div>
+					<div class="calendar__day day">15</div>
+				</div>
+				<div class="calendar__week">
+					<div class="calendar__day day">16</div>
+					<div class="calendar__day day">17</div>
+					<div class="calendar__day day">18</div>
+					<div class="calendar__day day">19</div>
+					<div class="calendar__day day">20</div>
+				</div>
+			</div>
+		</main>
+		<sidebar>
+			<div class="logo">Horaires</div>
+			<div class="avatar">
+				<div class="avatar__img">
+					<img src="./images/cal_1.png" alt="avatar" style="height: 50%; width: 50%; object-fit: contain; margin:auto;">
+				</div>
+				<div class="avatar__name">Celcal - IPL</div>
+			</div>
+			<nav id="menu" class="menu">
+				<a class="menu__item" href="#">
+					<i class="menu__icon fa fa-home"></i>
+					<span id="overview" class="menu__text">overview</span>
+				</a>
+				<a id="calendar" class="menu__item menu__item--active" href="#">
+					<i class="menu__icon fa fa-calendar"></i>
+					<span class="menu__text">calendar</span>
+				</a>
+				<select id="horaires" class="menu__item" style="display:none">
+
+				</select>
+
+			</nav>
+			<div class="copyright">copyright &copy; 2018</div>
+		</sidebar>
+	</div>
+
+
+	<script src="jquery-3.3.1.min.js"></script>
+	<script src="script.js"></script>
+
+	<!-- Website Font style -->
+	<script src="style/vendor/popper.min.js"></script>
+	<script type="text/javascript" src="style/bootstrap/bootstrap.min.js"></script>
+
+</body>
+
+
+</html>
